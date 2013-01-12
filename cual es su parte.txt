@@ -1,0 +1,17 @@
+uds tienen que programar el juego
+que no es otra cosa que poner muchos if y dentro de ellos reproducir
+los audios que yo grabe, el usuario para escoger una de las opciones
+tendra que pulsar click derecho (opcion 1) y click izquierdo (opcion 2)
+la extructura de los if se las dare cuando termine las grabaciones 
+o sea a mas tardar esta noche 8 pm
+
+para esto ud tienen que investigar como reproducir sonidos, para su comodidad
+los guarde en .wav asi que se les hara mas facil aun y los if uds ya saben como
+hacer es de fundamentos...
+
+eso es todo lo que tienen que saber...
+la pantalla es en blanco y el juego se unicia automatocamnete cuando corre el programa
+no hay que agregar imagenes xq es un juego para ciegos
+es mas facil todavia...
+
+la documentacion la podremos entregar despues, ya hable con el ing...
