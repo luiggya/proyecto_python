@@ -2,9 +2,9 @@ import pygame
 from pygame.locals import *
 # Autores: Luiggy Allauca, Juan Mite y Daniel Cuadrado
 def main ():
-	pygame.init()
+	pygame.init()	#Inicializa la libreria pygame
 	pantalla=pygame.display.set_mode((400,400))  	#Se definen las dimenciones de la pantalla
-	pygame.display.set_caption("Escape Plan")
+	pygame.display.set_caption("Escape Plan")	#se definio el nombre a la ventana
 	salir=False
 	fondo=pygame.image.load("logo.jpg")	#Se carga la imagen de fondo de la pantalla
 	#Se cargan todos los sonidos del juego a una variable
@@ -28,7 +28,7 @@ def main ():
 	sonarrestofonxrobo=pygame.mixer.Sound("audio2_arresto_finxrobo.wav")
 	sonarrefinrobo=pygame.mixer.Sound("audio3_arresto_finxrobo.wav")
 	sonhuidafinexitoso=pygame.mixer.Sound("audio4_huidafinal_finalexitoso.wav")
-	sonintro.play()	#Se da inicio a un sonido
+	sonintro.play()	#Se da inicio al sonido introductorio
 	
 	while salir!=True:
 	
@@ -37,93 +37,93 @@ def main ():
 			if event.type == pygame.QUIT:
 				salir = True
 			if event.type == pygame.KEYDOWN:	#Identifica que se presiono una tecla
-				if event.key == pygame.K_a:	#Comprobueba que se presiono la tecla "a"
+				if event.key == pygame.K_a:	#Comprueba que se presiono la tecla "a" que da inicio a la historia en la que el brazo del fugitivo se ve herido
 					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
-					sontrapo.play()	#Se da inicio a un sonido
+					sontrapo.play()	#Se da inicio al sonido
 									
-				elif event.key == pygame.K_0:
-					pygame.mixer.stop()
-					sonirfincasa.play()
+				elif event.key == pygame.K_0:	#Comprueba que se presiono la tecla "0" donde el fugitivo puede ir a la casa y permanecer oculto
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonirfincasa.play()	#Se da inicio al sonido
 										
-				elif event.key == pygame.K_1:
-					pygame.mixer.stop()	
-					sonirfincasa.play()
+				elif event.key == pygame.K_1:	#Comprueba que se presiono la tecla "0" donde el fugitivo puede ir a la casa y permanecer oculto
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonirfincasa.play()	#Se da inicio al sonido
 								
-				elif event.key == pygame.K_2:
-					pygame.mixer.stop()
-					sonfincasa.play()
+				elif event.key == pygame.K_2:	#Comprueba que se presiono la tecla "2" donde el fugitivo muere
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfincasa.play()	#Se da inicio al sonido
 							
-				elif event.key == pygame.K_3:
-					pygame.mixer.stop()	
-					sonopcalle.play()
+				elif event.key == pygame.K_3:	#Comprueba que se presiono la tecla "3" donde el fugitivo permanece en la calle
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonopcalle.play()	#Se da inicio al sonido
 							
-				elif event.key == pygame.K_o:
-					pygame.mixer.stop()
-					sonenelbar.play()		
+				elif event.key == pygame.K_o:	#Comprueba que se presiono la tecla "o" donde el fugitivo entra a la cantina
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonenelbar.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_4:
-					pygame.mixer.stop()
-					sonfincasa.play()
+				elif event.key == pygame.K_4:	#Comprueba que se presiono la tecla "4" donde el fugitivo muere
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfincasa.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_i:
-					pygame.mixer.stop()		
-					soncasajack.play()
+				elif event.key == pygame.K_i:	#Comprueba que se presiono la tecla "i" donde el fugitivo pide ayuda a un amigo
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					soncasajack.play()	#Se da inicio al sonido
 								
-				elif event.key == pygame.K_5:
-					pygame.mixer.stop()
-					sonenelbar.play()
+				elif event.key == pygame.K_5:	#Comprueba que se presiono la tecla "5" donde el fugitivo entra a la cantina
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonenelbar.play()	#Se da inicio al sonido
 							
 
-				elif event.key == pygame.K_h:
-					pygame.mixer.stop()		
-					sonhuidafinexitoso.play()
+				elif event.key == pygame.K_h:	#Comprueba que se presiono la tecla "h" donde el fugitivo escapa de la prision y tiene un final exitoso
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonhuidafinexitoso.play()	#Se da inicio al sonido
 								
-				elif event.key == pygame.K_j:
-					pygame.mixer.stop()
-					sonhuidafinexitoso.play()
+				elif event.key == pygame.K_j:	#Comprueba que se presiono la tecla "j" donde el fugitivo escapa de la prision y tiene un final exitoso
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonhuidafinexitoso.play()	#Se da inicio al sonido
 
 
-				elif event.key == pygame.K_6:
-					pygame.mixer.stop()
-					sonfincasa.play()
+				elif event.key == pygame.K_6:	#Comprueba que se presiono la tecla "6" donde el fugitivo muere
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfincasa.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_p:
-					pygame.mixer.stop()
-					sonfinxrobo.play()
+				elif event.key == pygame.K_p: #Comprueba que se presiono la tecla "p" donde el fugitivo se retira de la compañia del amigo
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfinxrobo.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_x:
-					pygame.mixer.stop()
-					sonfinxrobo.play()
+				elif event.key == pygame.K_x: #Comprueba que se presiono la tecla "x" donde el fugitivo huye de la policia
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfinxrobo.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_u:
-					pygame.mixer.stop()		
-					sonfronsinami.play()
+				elif event.key == pygame.K_u:	#Comprueba que se presiono la tecla "u" donde el fugitivo elige entre confrontar y huir
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonfronsinami.play()	#Se da inicio al sonido
 
-				elif event.key == pygame.K_y:
-					pygame.mixer.stop()			
-					sonpenultima.play()		
+				elif event.key == pygame.K_y:	#Comprueba que se presiono la tecla "u" donde el fugitivo elige entre confrontar y huir
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonpenultima.play()	#Se da inicio al sonido
 								
 	
-				elif event.key == pygame.K_7:
-					pygame.mixer.stop()
-					soncasajack.play()
+				elif event.key == pygame.K_7:	#Comprueba que se presiono la tecla "7" donde el fugitivo pide ayuda a un amigo
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					soncasajack.play()	#Se da inicio al sonido
 									
-				elif event.key == pygame.K_8:
-					pygame.mixer.stop()
-					sonarrestofonxrobo.play()
+				elif event.key == pygame.K_8:	#Comprueba que se presiono la tecla "8" donde el fugitivo muere despues del robo que hizo
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonarrestofonxrobo.play()	#Se da inicio al sonido
 									
-				elif event.key == pygame.K_9:
-					pygame.mixer.stop()		
-					sonroboauto.play()
+				elif event.key == pygame.K_9:	#Comprueba que se presiono la tecla "9" donde el fugitivo roba un auto
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonroboauto.play()	#Se da inicio al sonido
 					
-				elif event.key == pygame.K_b:
-					pygame.mixer.stop()
-					sonrobarfarma.play()
+				elif event.key == pygame.K_b:	#Comprueba que se presiono la tecla "b" donde el fugitivo va a robar a la farmacia
+					pygame.mixer.stop()	#Para todos los sonidos que se estuvieran ejecutandoce en el juego
+					sonrobarfarma.play()	#Se da inicio al sonido
 					
 		pantalla.fill((255,255,255))	#Se pinta de color blanco al fondo de la ventana
 		pantalla.blit(fondo,(60,60))	#Se agrega la imagen de fondo a la ventana
 		pygame.display.update()	#Actualiza la ventana
-	pygame.quit()	
+	pygame.quit()	#finaliza la libreria pygame
 		
 	
 main()
